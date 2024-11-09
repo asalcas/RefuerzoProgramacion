@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alvar\\Desktop\\DAM\\Refuerzo\\Clases con ale\\EjerciciosPoo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0C36C068-0A6A-45B4-8F6C-C11BC3FCEDFC}|Ejercicio2\\Ejercicio2.csproj|c:\\users\\alvar\\desktop\\dam\\refuerzo\\clases con ale\\ejerciciospoo\\ejercicio2\\ejercicio02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C36C068-0A6A-45B4-8F6C-C11BC3FCEDFC}|Ejercicio2\\Ejercicio2.csproj|solutionrelative:ejercicio2\\ejercicio02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91FBBE55-571D-417A-AE23-7610270C2FEF}|Ejercicio1\\Ejercicio1.csproj|c:\\users\\alvar\\desktop\\dam\\refuerzo\\clases con ale\\ejerciciospoo\\ejercicio1\\ejercicio01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91FBBE55-571D-417A-AE23-7610270C2FEF}|Ejercicio1\\Ejercicio1.csproj|solutionrelative:ejercicio1\\ejercicio01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91FBBE55-571D-417A-AE23-7610270C2FEF}|Ejercicio1\\Ejercicio1.csproj|c:\\users\\alvar\\desktop\\dam\\refuerzo\\clases con ale\\ejerciciospoo\\ejercicio1\\ejercicio1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{91FBBE55-571D-417A-AE23-7610270C2FEF}|Ejercicio1\\Ejercicio1.csproj|solutionrelative:ejercicio1\\ejercicio1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A728AC-D9F9-4DDD-8FB3-CB8A6B52F608}|Ejercicio3\\Ejercicio3.csproj|c:\\users\\alvar\\desktop\\dam\\refuerzo\\clases con ale\\ejerciciospoo\\ejercicio3\\ejercicio03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A728AC-D9F9-4DDD-8FB3-CB8A6B52F608}|Ejercicio3\\Ejercicio3.csproj|solutionrelative:ejercicio3\\ejercicio03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Ejercicio1",
+              "DocumentMoniker": "C:\\Users\\alvar\\Desktop\\DAM\\Refuerzo\\Clases con ale\\EjerciciosPoo\\Ejercicio1\\Ejercicio1.csproj",
+              "RelativeDocumentMoniker": "Ejercicio1\\Ejercicio1.csproj",
+              "ToolTip": "C:\\Users\\alvar\\Desktop\\DAM\\Refuerzo\\Clases con ale\\EjerciciosPoo\\Ejercicio1\\Ejercicio1.csproj",
+              "RelativeToolTip": "Ejercicio1\\Ejercicio1.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-03T21:23:35.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Ejercicio03.cs",
+              "DocumentMoniker": "C:\\Users\\alvar\\Desktop\\DAM\\Refuerzo\\Clases con ale\\EjerciciosPoo\\Ejercicio3\\Ejercicio03.cs",
+              "RelativeDocumentMoniker": "Ejercicio3\\Ejercicio03.cs",
+              "ToolTip": "C:\\Users\\alvar\\Desktop\\DAM\\Refuerzo\\Clases con ale\\EjerciciosPoo\\Ejercicio3\\Ejercicio03.cs",
+              "RelativeToolTip": "Ejercicio3\\Ejercicio03.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T21:03:10.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ejercicio02.cs",
+              "DocumentMoniker": "C:\\Users\\alvar\\Desktop\\DAM\\Refuerzo\\Clases con ale\\EjerciciosPoo\\Ejercicio2\\Ejercicio02.cs",
+              "RelativeDocumentMoniker": "Ejercicio2\\Ejercicio02.cs",
+              "ToolTip": "C:\\Users\\alvar\\Desktop\\DAM\\Refuerzo\\Clases con ale\\EjerciciosPoo\\Ejercicio2\\Ejercicio02.cs",
+              "RelativeToolTip": "Ejercicio2\\Ejercicio02.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAgwEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T20:40:11.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Ejercicio01.cs",
+              "DocumentMoniker": "C:\\Users\\alvar\\Desktop\\DAM\\Refuerzo\\Clases con ale\\EjerciciosPoo\\Ejercicio1\\Ejercicio01.cs",
+              "RelativeDocumentMoniker": "Ejercicio1\\Ejercicio01.cs",
+              "ToolTip": "C:\\Users\\alvar\\Desktop\\DAM\\Refuerzo\\Clases con ale\\EjerciciosPoo\\Ejercicio1\\Ejercicio01.cs",
+              "RelativeToolTip": "Ejercicio1\\Ejercicio01.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T19:49:17.822Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
