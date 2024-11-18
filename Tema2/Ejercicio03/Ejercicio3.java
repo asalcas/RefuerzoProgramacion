@@ -17,6 +17,7 @@ public class Ejercicio3 {
             }else {
                 System.out.println("Sigue intentando con otro numero más cercano a 0");
             }
+            numeroInput = lector.nextDouble();
         }
     lector.close();
         
