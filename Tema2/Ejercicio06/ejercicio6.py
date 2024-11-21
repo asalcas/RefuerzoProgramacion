@@ -8,6 +8,7 @@ class ejercicio6:
         a = input("Vamos a realizar una ecuacion, introduce tres numeros para realizarla: a = ")
         b = input("Otro numero más: b = ")
         c = input("Un ultimo número: c = ")
+        
         discriminante = pow(b,2) - (4 * a * c)
         if (a == 0 or b == 0 or c == 0):
             print("La solución es 0")
