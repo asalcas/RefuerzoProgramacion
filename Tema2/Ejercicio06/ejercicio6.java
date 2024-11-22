@@ -12,9 +12,6 @@ public class ejercicio6 {
         System.out.println("Introduce un numero para C: ");
         double c = scanner.nextDouble();
         double discriminante = Math.pow(b,2) - (4 * a * c);
-        boolean funcionando = true;
-
-        
 
             if (a == 0 || b == 0 || c == 0){
                 System.out.println("La solución es: 0");
@@ -28,7 +25,7 @@ public class ejercicio6 {
                 System.out.println("Las soluciones son:" + x +" y "+ x1);
             }else{
                 System.out.println("No hay solucion REAL");
-            
+        scanner.close();    
         }  
     }
 }

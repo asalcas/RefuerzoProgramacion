@@ -29,6 +29,7 @@ public class ejercicio5 {
             }else {
                 System.out.println(num3 + ">" + num1 + ">" + num2);
             }
-        }   
+        } 
+    lector.close();
     }
 }
