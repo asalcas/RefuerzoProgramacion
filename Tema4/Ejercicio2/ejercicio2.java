@@ -11,6 +11,7 @@ public class ejercicio2 {
         int valorAbsoluto;
         valorAbsoluto = (respuestaUser >= 0) ? respuestaUser : respuestaUser * -1;
         System.out.println("El valor absoluto de |" + respuestaUser + "| = " + valorAbsoluto);
+        scanner.close();
     }
 
 }
