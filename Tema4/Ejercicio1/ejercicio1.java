@@ -1,4 +1,4 @@
-package Tema4.Ejercicio1;
+package Ejercicio1;
 
 import java.util.Scanner;
 
@@ -19,10 +19,10 @@ import java.util.Scanner;
 //* Obtenido = false
 // Numero introducido: 'num' = 1221
 // Resultado: capicua = true
-
+//* Obtenido = true
 // Numero introducido: 'num' = 1121
 // Resultado: capicua = false
-
+//* Obtenido = false
 public class ejercicio1 {
 
     public static void main(String[] args) {
