@@ -4,12 +4,15 @@ import java.util.Scanner;
 
 public class ejercicio4 {
 
-    // Numero introducido: 52 = "cincuenta y dos"
-    // Resultado esperado: 48586412Q
-    // * Obtenido = 48586412Q
-    // Numero introducido: '12345678' = 14
-    // Resultado esperado: 12345678Z
-    // * Obtenido = 12345678Z
+    // Numero introducido: 20
+    // Resultado esperado: "VEINTE"
+    // * Obtenido = VEINTE
+    // Numero introducido: 99
+    // Resultado esperado: "NOVENTA Y NUEVE"
+    // * Obtenido = NOVENTA Y NUEVE
+    // Numero introducido: 1
+    // Resultado esperado: "UNO"
+    // * Obtenido = UNO
     public static void main(String[] args) {
         // Escribe un programa que solicite al usuario un número entero entre 1 y 99.
         // El programa debe mostrarlo con letras, por ejemplo, para 56 se verá:
