@@ -3,24 +3,15 @@ package Ejercicio8;
 import java.util.Scanner;
 
 public class ejercicio8 {
-    // Numero introducido (mes):
-    // Numero introducido(year):
-    // * Resultado Obtenido:
-    // Numero introducido (mes):
-    // Numero introducido(year):
-    // * Resultado Obtenido:
-    // Numero introducido (mes):
-    // Numero introducido(year):
-    // * Resultado Obtenido:
-    // Numero introducido (mes):
-    // Numero introducido(year):
-    // * Resultado Obtenido:
-    // Numero introducido (mes):
-    // Numero introducido(year):
-    // * Resultado Obtenido:
-    // Numero introducido (mes):
-    // Numero introducido(year):
-    // * Resultado Obtenido:
+    // Numero introducido (mes): 12
+    // Numero introducido(year): 2014
+    // * Resultado Obtenido: Diciembre: 31 dias 
+    // Numero introducido (mes): 2
+    // Numero introducido(year): 2014
+    // * Resultado Obtenido: Febrero: 28 dias
+    // Numero introducido (mes): 2
+    // Numero introducido(year): 2024
+    // * Resultado Obtenido: Febrero: 29 dias
     public static void main(String[] args) {
         // Pedir al usuario el número de un mes y el año (comprobando si es o no
         // bisiesto). Debe imprimir por pantalla el número de días que tiene el mes.
