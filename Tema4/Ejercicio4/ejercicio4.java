@@ -17,63 +17,171 @@ public class ejercicio4 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Introduce un numero y te lo digo en cadena de caracteres: ");
         int numUser = scanner.nextInt();
-        String nombreDecimales = "";
-        String nombreUnidades = "";
+        int obtenerDecimales = numUser / 10;
+        int obtenerUnidades = numUser % 10;
+        String decimal = "";
+        String unidad = "";
+        String especiales = "";
+        String numeroFinal = "";
+        scanner.close();
 
-        if (numUser > 0 && numUser < 16) {
+        if (numUser >= 0 && numUser <= 15) {
             switch (numUser) {
+                case 0:
+                    especiales = ("CERO");
+                    break;
                 case 1:
-                    System.out.println("UNO");
+                    especiales = ("UNO");
                     break;
                 case 2:
-                    System.out.println("DOS");
+                    especiales = ("DOS");
                     break;
                 case 3:
-                    System.out.println("TRES");
+                    especiales = ("TRES");
                     break;
                 case 4:
-                    System.out.println("CUATRO");
+                    especiales = ("CUATRO");
                     break;
                 case 5:
-                    System.out.println("CINCO");
+                    especiales = ("CINCO");
                     break;
                 case 6:
-                    System.out.println("SEIS");
+                    especiales = ("SEIS");
                     break;
                 case 7:
-                    System.out.println("SIETE");
+                    especiales = ("SIETE");
                     break;
                 case 8:
-                    System.out.println("OCHO");
+                    especiales = ("OCHO");
                     break;
                 case 9:
-                    System.out.println("NUEVE");
+                    especiales = ("NUEVE");
                     break;
                 case 10:
-                    System.out.println("DIEZ");
+                    especiales = ("DIEZ");
                     break;
                 case 11:
-                    System.out.println("ONCE");
+                    especiales = ("ONCE");
                     break;
                 case 12:
-                    System.out.println("DOCE");
+                    especiales = ("DOCE");
                     break;
                 case 13:
-                    System.out.println("TRECE");
+                    especiales = ("TRECE");
                     break;
                 case 14:
-                    System.out.println("CATORCE");
+                    especiales = ("CATORCE");
                     break;
                 case 15:
-                    System.out.println("QUINCE");
+                    especiales = ("QUINCE");
                     break;
-                default:
-                    break;
+
             }
-            if (numUser < 20) {
-                
-                // una funcion para unidades y una funcion para decenas
+
+        } else if ((numUser >= 16 && numUser <= 99) && (numUser != 20)) {
+            switch (obtenerDecimales) {
+                case 1:
+                    decimal = "DIECI";
+                    break;
+                case 2:
+                    decimal = "VEINTI";
+                    break;
+                case 3:
+                    decimal = "TREINTA";
+                    break;
+                case 4:
+                    decimal = "CUARENTA";
+                    break;
+                case 5:
+                    decimal = "CINCUENTA";
+                    break;
+                case 6:
+                    decimal = "SESENTA";
+                    break;
+                case 7:
+                    decimal = "SETENTA";
+                    break;
+                case 8:
+                    decimal = "OCHENTA";
+                    break;
+                case 9:
+                    decimal = "NOVENTA";
+                    break;
+
+            }
+            if ((numUser >= 16) && (numUser <= 29)) {
+                switch (obtenerUnidades) {
+
+                    case 1:
+                        unidad = ("UNO");
+                        break;
+                    case 2:
+                        unidad = ("DOS");
+                        break;
+                    case 3:
+                        unidad = ("TRES");
+                        break;
+                    case 4:
+                        unidad = ("CUATRO");
+                        break;
+                    case 5:
+                        unidad = ("CINCO");
+                        break;
+                    case 6:
+                        unidad = ("SEIS");
+                        break;
+                    case 7:
+                        unidad = ("SIETE");
+                        break;
+                    case 8:
+                        unidad = ("OCHO");
+                        break;
+                    case 9:
+                        unidad = ("NUEVE");
+                        break;
+
+                }
+            } else {
+                switch (obtenerUnidades) {
+                    case 1:
+                        unidad = " Y UNO";
+                        break;
+                    case 2:
+                        unidad = " Y DOS";
+                        break;
+                    case 3:
+                        unidad = " Y TRES";
+                        break;
+                    case 4:
+                        unidad = " Y CUATRO";
+                        break;
+                    case 5:
+                        unidad = " Y CINCO";
+                        break;
+                    case 6:
+                        unidad = " Y SEIS";
+                        break;
+                    case 7:
+                        unidad = " Y SIETE";
+                        break;
+                    case 8:
+                        unidad = " Y OCHO";
+                        break;
+                    case 9:
+                        unidad = " Y NUEVE";
+                        break;
+                }
             }
         }
+        if ((numUser > 0) && (numUser < 16)) {
+            numeroFinal = especiales;
+        } else if (numUser == 20) {
+            numeroFinal = "VEINTE";
+
+        } else {
+            numeroFinal = decimal += unidad;
+        }
+        System.out.println(numeroFinal);
+
     }
 }
