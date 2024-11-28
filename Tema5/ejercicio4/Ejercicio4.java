@@ -5,11 +5,13 @@ import java.util.Scanner;
 public class Ejercicio4 {
     // Funcion main que pide al usuario 10 Nº por consola, SUMA los numeros
     // positivos, SUMA y hace la MEDIA de los negativos y cuenta el numero de 0
-    // Numeros de 0 introducido: 8
-    // Numero esperado de contadorCeros = 8
-    // Numeros de 1 introducidos: 2
-    // Numero esperado de la suma de POSITIVOS = 2
-    // * Resultado obtenido
+    // Numeros de 0 introducido: 6
+    // Numero esperado de contadorCeros = 6
+    // Numeros positivos introducidos: 3 (5, 5, 5)
+    // Numeros negativos introducidos: 2 (-2)
+    // Numero esperado de la MEDIA de POSITIVOS = 2
+    // * Resultado obtenido 
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int contador = 0;
