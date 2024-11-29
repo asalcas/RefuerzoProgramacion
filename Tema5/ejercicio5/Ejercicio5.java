@@ -10,11 +10,25 @@ public class Ejercicio5 {
         // la media, el número de alumnos y cuántos son mayores de edad.
         Scanner lector = new Scanner(System.in);
         System.out.println("Introduce la edad de los alumnos de IES Nervion: ");
-        int respuestaUser = lector.nextInt();
-        int sumaEdades;
-        int mediaEdadCentro;
+        int respuestaUser = 0;
+        int sumaEdades = 0;
+        int mediaEdadCentro = 0;
         int contadorAlumnos = 0;
         int contadorAlumnosMayorEdad = 0;
-
+        respuestaUser = lector.nextInt();
+        while (respuestaUser >= 0) {
+            sumaEdades += respuestaUser;
+            contadorAlumnos++;
+            mediaEdadCentro = sumaEdades / contadorAlumnos;
+            if (respuestaUser >= 18) {
+                contadorAlumnosMayorEdad++;
+            }
+            respuestaUser = lector.nextInt();
+        }
+        System.out.println("La suma de todas las edades es de: " + sumaEdades);
+        System.out.println("Y hay " + contadorAlumnos + " alumnos en el instituto");
+        System.out.println("La media de edad de los alumnos del centro es de: " + mediaEdadCentro);
+        System.out.println("Hay " + contadorAlumnosMayorEdad + " alumnos con mas de 18 años ");
+        lector.close();
     }
 }
