@@ -16,6 +16,7 @@ public class Ejercicio5 {
         int contadorAlumnos = 0;
         int contadorAlumnosMayorEdad = 0;
         respuestaUser = lector.nextInt();
+        
         while (respuestaUser >= 0) {
             sumaEdades += respuestaUser;
             contadorAlumnos++;
