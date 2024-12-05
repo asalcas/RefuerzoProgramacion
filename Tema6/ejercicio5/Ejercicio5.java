@@ -25,7 +25,7 @@ public class Ejercicio5 {
             if (numeroUsuario == numeroFinal) { // Si el numero es == al que pensó la maquina WIN!
                 System.out.println("Enhorabuena!! Has dado con el numero correcto!");
             } else { // Por el contrario
-                if (numeroUsuario > numeroFinal) { // Si el numero es mayor
+                if (numeroUsuario > numeroFinal) { // Si el numero es mayor //! ESPABILAO POR RANGSO, NO POR SUMAS
 
                     if ((numeroUsuario - 5 == numeroFinal) && (numeroUsuario - 4 == numeroFinal)
                             || (numeroUsuario - 3 == numeroFinal) || (numeroUsuario - 2 == numeroFinal)

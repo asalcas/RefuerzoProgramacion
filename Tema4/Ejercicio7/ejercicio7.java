@@ -28,11 +28,12 @@ public class ejercicio7 {
         Scanner lector = new Scanner(System.in);
         double precioBillete;
         double distanciaKm;
+        int diasViaje;
         double descuento;
         final double PRECIO_KM = 2.5;
 
         System.out.println("Cuantos dias de viaje quieres estar?: ");
-        int diasViaje = lector.nextInt();
+        diasViaje = lector.nextInt();
         System.out.println("Y cuanta distancia quieres recorrer?: ");
         distanciaKm = lector.nextDouble();
 
@@ -43,7 +44,8 @@ public class ejercicio7 {
         } else {
             precioBillete = distanciaKm * PRECIO_KM;
         }
-        lector.close();
+        
         System.out.println("El precio total del billete sera de: " + precioBillete + " Euros");
+        lector.close();
     }
 }

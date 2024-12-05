@@ -3,6 +3,10 @@ package ejercicio6;
 import java.util.Scanner;
 
 public class Ejercicio6 {
+    private static final String TIJERA = "TIJERA";
+    private static final String PAPEL = "PAPEL";
+    private static final String PIEDRA = "PIEDRA";
+
     /**
      * Funcion dentro del main: Juego del PIEDRA, PAPEL y TIJERA
      * 
@@ -10,6 +14,7 @@ public class Ejercicio6 {
      */
     public static void main(String[] args) {
         Scanner lector = new Scanner(System.in);
+        // AÑADIR CONSTANTE PARA METERLO EN LAS CONDICIONES
         boolean funcionando = true;
         String opcionJ1 = "";
         String opcionJ2 = "";
@@ -23,29 +28,29 @@ public class Ejercicio6 {
                 System.out.println("J2: ");
                 opcionJ2 = lector.nextLine().toUpperCase();// Leemos lo que pase por pantalla J2
 
-                if (opcionJ1.equals("PIEDRA")) { // SI la opción de J1 es PIEDRA
+                if (opcionJ1.equals(PIEDRA)) { // SI la opción de J1 es PIEDRA //! TENER EN CUENTA LOS REFACTORIZADOS, OPCIONES DE GANAR OPCIONES DE PERDER
                     // VEMOS QUE ELIGE J2 y ESCRIBIMOS
-                    if (opcionJ2.equals("PAPEL")) {
+                    if (opcionJ2.equals(PAPEL)) {
                         System.out.println("Gana J2: PAPEL LE GANA A PIEDRA");
-                    } else if (opcionJ2.equals("TIJERA")) {
+                    } else if (opcionJ2.equals(TIJERA)) {
                         System.out.println("Gana J1: PIEDRA LE GANA A TIJERA");
                     } else {
                         System.out.println("Empate, ambos sacaron PIEDRA");
                     }
-                } else if (opcionJ1.equals("PAPEL")) { // SI la opción de J1 es PAPEL
+                } else if (opcionJ1.equals(PAPEL)) { // SI la opción de J1 es PAPEL
                     // VEMOS QUE ELIGE J2 y ESCRIBIMOS
-                    if (opcionJ2.equals("PIEDRA")) {
+                    if (opcionJ2.equals(PIEDRA)) {
                         System.out.println("Gana J1: PAPEL LE GANA A PIEDRA");
-                    } else if (opcionJ2.equals("TIJERA")) {
+                    } else if (opcionJ2.equals(TIJERA)) {
                         System.out.println("Gana J2: TIJERA LE GANA A PIEDRA");
                     } else {
                         System.out.println("Empate, ambos sacaron PAPEL");
                     }
-                } else if (opcionJ1.equals("TIJERA")) { // SI la opción de J1 es TIJERA
+                } else if (opcionJ1.equals(TIJERA)) { // SI la opción de J1 es TIJERA
                     // VEMOS QUE ELIGE J2 y ESCRIBIMOS
-                    if (opcionJ2.equals("PIEDRA")) {
+                    if (opcionJ2.equals(PIEDRA)) {
                         System.out.println("Gana J2: PIEDRA LE GANA A TIJERA");
-                    } else if (opcionJ2.equals("PAPEL")) {
+                    } else if (opcionJ2.equals(PAPEL)) {
                         System.out.println("Gana J1: PAPEL LE GANA A TIJERA");
                     } else {
                         System.out.println("Empate, ambos sacaron TIJERA");

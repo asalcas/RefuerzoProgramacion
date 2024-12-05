@@ -8,7 +8,7 @@ class switches {
         System.out.println("Introduce un numero del 0 al 10 para asignar una nota: ");
         int notaUsuario = lector.nextInt();
 
-        switch (notaUsuario) {
+        switch (notaUsuario) { // METER LOS CASE JUNTOS
             case 0:
                 System.out.println("INSUFICIENTE");
                 break;
