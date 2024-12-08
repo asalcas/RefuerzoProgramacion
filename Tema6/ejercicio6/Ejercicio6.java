@@ -3,6 +3,7 @@ package ejercicio6;
 import java.util.Scanner;
 
 public class Ejercicio6 {
+    // AÑADIR CONSTANTE PARA METERLO EN LAS CONDICIONES
     private static final String TIJERA = "TIJERA";
     private static final String PAPEL = "PAPEL";
     private static final String PIEDRA = "PIEDRA";
@@ -14,7 +15,6 @@ public class Ejercicio6 {
      */
     public static void main(String[] args) {
         Scanner lector = new Scanner(System.in);
-        // AÑADIR CONSTANTE PARA METERLO EN LAS CONDICIONES
         boolean funcionando = true;
         String opcionJ1 = "";
         String opcionJ2 = "";
