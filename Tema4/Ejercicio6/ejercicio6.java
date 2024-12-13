@@ -42,9 +42,12 @@ public class ejercicio6 {
             if (horas == 24) {
                 horas = 0;
             }
-        }
-        scanner.close();
-        System.out.println(String.format("La hora será las: %sh, %s' ,%s''", horas, minutos, segundos));
 
+        }
+        
+        //  Añadir ternario para conseguir mins 07 por ejemplo.
+
+        System.out.println(String.format("La hora será las: %sh, %s' ,%s''", horas, minutos, segundos)); // Resultados para 0
+        scanner.close();
     }
 }

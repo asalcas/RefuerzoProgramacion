@@ -1,7 +1,6 @@
 #coding: latin1
 
 from decimal import Decimal
-from tokenize import Double
 
 
 class Ejercicio3:
@@ -17,3 +16,4 @@ class Ejercicio3:
         else:
             numeroInput = Decimal(input("Sigue intentandolo con otro numero que sea casi 0: "))
         numeroInput
+        

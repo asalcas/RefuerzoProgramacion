@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ejercicio8 {
     // Numero introducido (mes): 12
     // Numero introducido(year): 2014
-    // * Resultado Obtenido: Diciembre: 31 dias 
+    // * Resultado Obtenido: Diciembre: 31 dias
     // Numero introducido (mes): 2
     // Numero introducido(year): 2014
     // * Resultado Obtenido: Febrero: 28 dias
@@ -89,9 +89,7 @@ public class ejercicio8 {
                 case 12:
                     mes = "Diciembre: 31";
                     break;
-
-                default:
-                    break;
+                // Si varios tienen el mismo numero de dias meterlo en el mismo case
             }
             System.out.println(mes + " dias");
         } else {
