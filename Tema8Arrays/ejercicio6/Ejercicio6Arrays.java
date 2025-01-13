@@ -12,27 +12,26 @@ public class Ejercicio6Arrays {
         String cadenaArray = "";
         int valor;
 
-        for(int i = 0; i < arrayNumeros.length; i++){
-        System.out.print("Escribe un numero: ");
-        respuestaUser = lector.nextInt();
-        arrayNumeros[i] = respuestaUser;
+        for (int i = 0; i < arrayNumeros.length; i++) {
+            System.out.print("Escribe un numero: ");
+            respuestaUser = lector.nextInt();
+            arrayNumeros[i] = respuestaUser;
         }
 
-        while(indiceBusqueda < arrayNumeros.length){
+        while (indiceBusqueda < arrayNumeros.length) {
             valor = arrayNumeros[indiceBusqueda];
             System.out.print("El numero: " + valor);
             indiceBusqueda++;
-            if (valor % 2 == 0){
+            if (valor % 2 == 0) {
                 System.out.println(" es par.");
-            }else{
+            } else {
                 System.out.println(" es impar.");
             }
-            
+
         }
         cadenaArray = Arrays.toString(arrayNumeros);
         System.out.println("El array en cuestion es: " + cadenaArray);
         lector.close();
     }
-    
 
 }
