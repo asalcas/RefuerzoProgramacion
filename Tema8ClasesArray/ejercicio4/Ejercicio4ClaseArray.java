@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Ejercicio4ClaseArray {
     public static void main(String[] args) {
-        int[] competidores = new int[4];
+        int[] competidores = new int[8];
         int[] arrayReverse = new int[competidores.length];
         int j = 0;
         Scanner sc = new Scanner(System.in);
@@ -15,7 +15,7 @@ public class Ejercicio4ClaseArray {
 
         for(int i = 0; i < competidores.length; i++){
             puntuacion = sc.nextInt();
-                if(puntuacion >= 1000 && puntuacion <= 2800){
+            if(puntuacion >= 1000 && puntuacion <= 2800){
                     competidores[i] = puntuacion;
                     System.out.println("Introduce otro numero: ");
                 }else{
@@ -30,15 +30,15 @@ public class Ejercicio4ClaseArray {
                 }
         }
         Arrays.sort(competidores);
-        for(int i = competidores.length -1; i > 0; i--){
+        for(int i = competidores.length -1; i >= 0; i--){
             arrayReverse[i] = competidores[j];
             j++;
         }
 
         cadenaArray = Arrays.toString(competidores);
-        System.out.println(cadenaArray);
+        System.out.println(String.format("Cadena ordenada ASCENDENTE: "+cadenaArray));
         cadenaArray = Arrays.toString(arrayReverse);
-        System.out.println(cadenaArray);
+        System.out.println(String.format("Cadena ordenada DESCENDENTE: "+cadenaArray));
         sc.close();
     }
 }
