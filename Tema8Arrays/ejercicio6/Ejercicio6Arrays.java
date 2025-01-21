@@ -8,7 +8,6 @@ public class Ejercicio6Arrays {
         Scanner lector = new Scanner(System.in);
         int[] arrayNumeros = new int[8];
         int respuestaUser;
-        int indiceBusqueda = 0;
         String cadenaArray = "";
         int valor;
 
@@ -18,6 +17,19 @@ public class Ejercicio6Arrays {
             arrayNumeros[i] = respuestaUser;
         }
 
+        for (int i = 0; i < arrayNumeros.length; i++){
+            valor = arrayNumeros[i];
+            System.out.print("El numero: " + valor);
+            if (valor % 2 == 0) {
+                System.out.println(" es par.");
+            } else {
+                System.out.println(" es impar.");
+            }
+        }
+
+
+        //? No entiendo por que lo hice con while la verdad es que ahora no se que quería hacer
+        /*    
         while (indiceBusqueda < arrayNumeros.length) {
             valor = arrayNumeros[indiceBusqueda];
             System.out.print("El numero: " + valor);
@@ -29,6 +41,7 @@ public class Ejercicio6Arrays {
             }
 
         }
+            */
         cadenaArray = Arrays.toString(arrayNumeros);
         System.out.println("El array en cuestion es: " + cadenaArray);
         lector.close();
