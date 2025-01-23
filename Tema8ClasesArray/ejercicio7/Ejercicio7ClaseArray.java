@@ -1,23 +1,18 @@
 package ejercicio7;
-
+import java.util.Arrays;
 public class Ejercicio7ClaseArray {
     public static void main(String[] args) {
-        // huecos 55
-        final int N = 10;
-        int [] arrayNumeros = new int[N * (N + 1) / 2];
+        int [] arrayNumeros = new int[55]; 
+        int desde = 0;
+        int hasta = 0;
+        String cadenaArray = "";
 
-        for(int i = 0; i < arrayNumeros.length; i++){
-        // Desde
-        // Hasta
-        // fill (i) desde (suma de todos los numeros previos a i) hasta (desde + i)
-        // contador = i(o algo asi)
-        // while (contador != 0){
-        // variable a contar += array[i]
-        // contador--
-        
-        // }
-
-        // 1,2,2,3,3,3,4,4,4,4,5,5,5,5,5,6,6,6,6,6,6,7,7,7,7,7,7,7
+        for(int i = 1; i <= 10 ; i++){
+            hasta = desde + i;
+            Arrays.fill(arrayNumeros,desde,hasta,i);
+            desde = hasta;
         }
+        cadenaArray = Arrays.toString(arrayNumeros);
+        System.out.println(cadenaArray);
     }
 }

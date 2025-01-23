@@ -78,6 +78,6 @@ public class Ejercicio8 {
 
         suma = dado1 + dado2;
         System.out.println("La suma de " + dado1 + " y " + dado2 + " = " + suma);
-
+        lector.close();
     }
 }
