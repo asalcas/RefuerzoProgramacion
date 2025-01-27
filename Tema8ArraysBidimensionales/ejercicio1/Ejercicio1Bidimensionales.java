@@ -28,7 +28,7 @@ public class Ejercicio1Bidimensionales {
                     {4, 5, 6},       // Fila 1
                     {7, 8, 9}        // Fila 2
                                      // Filas totales 3  
-        // Columna: 0  1  2  3  4
+        // Columna:  (0)(1)(2)(3)(4)
         // Columnas totales 5
         };
         
