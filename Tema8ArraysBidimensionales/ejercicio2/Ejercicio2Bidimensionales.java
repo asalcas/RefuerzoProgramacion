@@ -7,9 +7,10 @@ public class Ejercicio2Bidimensionales {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int numMaximo = 0;
-        int numMinimo = 0;
+        int numMaximo = Integer.MIN_VALUE;
+        int numMinimo = Integer.MAX_VALUE;
         int media = 0;
+        int sumaTotal = 0;
         // String cadenaString = "";
 
         for (int i = 0; i < escuelaDB.length; i++) {
@@ -32,7 +33,25 @@ public class Ejercicio2Bidimensionales {
         }
 
         for(int i = 0; i < escuelaDB.length ;i++){
-            
+            for(int j = 0; j < escuelaDB[i].length;j++){
+                sumaTotal += escuelaDB[i][j];
+                
+                if (escuelaDB[i][j] > numMaximo){
+                    numMaximo = escuelaDB[i][j];
+                }
+                if (escuelaDB[i][j] < numMinimo){
+                    numMinimo = escuelaDB[i][j];
+                }
+                
+            }
+            media = sumaTotal/escuelaDB[i].length;
+            System.out.println("La media de notas del alumno: "+ (i+1) +" es = " + media);
+            System.out.println("La nota máxima del alumno " + (i+1) +" es "+ numMaximo + " y la nota mínima es "+ numMinimo+"\n");
+            media = 0;
+            sumaTotal = 0;
+            numMaximo = Integer.MIN_VALUE;
+            numMinimo = Integer.MAX_VALUE;
+
         }
 
         // System.out.println(Arrays.deepToString(escuelaDB));
