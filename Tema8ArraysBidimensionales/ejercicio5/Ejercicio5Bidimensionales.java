@@ -16,11 +16,13 @@ public class Ejercicio5Bidimensionales {
          */
         Random rd = new Random();
         int numAleatorio;
-        int sumaColumnas = 0;
+        int sumaColumnas[] = new int[5];
         int sumaFilas = 0;
-        int sizeJ = 0;
-        // String cadenaString ="";
+        int sumaTotalFilas = 0;
+        int sumaTotalColumnas = 0;
 
+        // String cadenaString ="";
+        // ? FOR QUE RECORRE EL ARRAY BIDIMENSIONAL Y LE DA VALOR A LAS POSICIONES
         int[][] tablaAutomatica = new int[4][5];
         for (int i = 0; i < tablaAutomatica.length; i++) {
             for (int j = 0; j < tablaAutomatica[i].length; j++) {
@@ -31,26 +33,30 @@ public class Ejercicio5Bidimensionales {
         // cadenaString = Arrays.deepToString(tablaAutomatica);
         // System.out.println(cadenaString);
 
+        // ? FOR QUE RECORRE EL ARRAY BIDIMENSIONAL E IMPRIME LAS SUMAS
         for (int i = 0; i <= tablaAutomatica.length - 1; i++) {
             for (int j = 0; j < tablaAutomatica[i].length; j++) {
                 System.out.print(tablaAutomatica[i][j] + "\t");
                 sumaFilas += tablaAutomatica[i][j];
-                sizeJ = j;
-                
+                sumaColumnas[j] += tablaAutomatica[i][j];
+                sumaTotalFilas += sumaFilas;
+
             }
-
-            
-
 
             // sumaColumnas += tablaAutomatica[i];
             System.out.print("TOTAL FILA " + i + " : " + sumaFilas);
             System.out.println();
             sumaFilas = 0;
-            if (sizeJ == tablaAutomatica[i].length) {
-                System.out.print(sumaColumnas + "\t");
-            }
-            sumaColumnas = 0;
+
         }
+        // Imprimir las sumas de las columnas en la fila final
+        for (int j = 0; j < sumaColumnas.length; j++) {
+            System.out.print(sumaColumnas[j] + "\t"); // Imprimir la suma de cada columna
+            sumaTotalColumnas += sumaColumnas[j];
+            sumaColumnas[j] = 0;
+        }
+        System.out.print(sumaTotalColumnas + sumaTotalFilas);
+        System.out.println(); // Salto de línea al final
 
     }
 }
