@@ -15,48 +15,44 @@ public class Ejercicio5Bidimensionales {
          * Un ejemplo de cómo deben mostrarse dichas sumas parciales sería:
          */
         Random rd = new Random();
-        int numAleatorio;
-        int sumaColumnas[] = new int[5];
-        int sumaFilas = 0;
-        int sumaTotalFilas = 0;
-        int sumaTotalColumnas = 0;
+        String cadenaArrayPruebas = "";
+        int[][] tablaSumatorios = new int[4][5];
+        int acumulandoValorFila = 0;
+        int acumulandoValorColumna = 0;
+        int total = 0;
 
-        // String cadenaString ="";
-        // ? FOR QUE RECORRE EL ARRAY BIDIMENSIONAL Y LE DA VALOR A LAS POSICIONES
-        int[][] tablaAutomatica = new int[4][5];
-        for (int i = 0; i < tablaAutomatica.length; i++) {
-            for (int j = 0; j < tablaAutomatica[i].length; j++) {
-                numAleatorio = rd.nextInt(100, 999);
-                tablaAutomatica[i][j] = numAleatorio;
+        // Variables creadas para la comprobación
+        int comprobarFilas = 0;
+        int comprobarColumnas= 0;
+
+        for (int i = 0; i < tablaSumatorios.length; i++) {
+            for (int j = 0; j < tablaSumatorios[i].length; j++) {
+                tablaSumatorios[i][j] = rd.nextInt(100,999);
+                acumulandoValorFila += tablaSumatorios[i][j];
+                System.out.print(tablaSumatorios[i][j] + "\t");
+                
             }
-        }
-        // cadenaString = Arrays.deepToString(tablaAutomatica);
-        // System.out.println(cadenaString);
-
-        // ? FOR QUE RECORRE EL ARRAY BIDIMENSIONAL E IMPRIME LAS SUMAS
-        for (int i = 0; i <= tablaAutomatica.length - 1; i++) {
-            for (int j = 0; j < tablaAutomatica[i].length; j++) {
-                System.out.print(tablaAutomatica[i][j] + "\t");
-                sumaFilas += tablaAutomatica[i][j];
-                sumaColumnas[j] += tablaAutomatica[i][j];
-                sumaTotalFilas += sumaFilas;
-
-            }
-
-            // sumaColumnas += tablaAutomatica[i];
-            System.out.print("TOTAL FILA " + i + " : " + sumaFilas);
+            System.out.print("\t Fila "+ i +": " + acumulandoValorFila + "\t");
+            comprobarFilas +=acumulandoValorFila;
+            acumulandoValorFila = 0;
             System.out.println();
-            sumaFilas = 0;
+        }
 
+        // Este está al revés por que vamos leyendo por COLUMNAS, no por FILAS
+        for (int j = 0; j < tablaSumatorios[0].length; j++){
+            for (int i = 0; i < tablaSumatorios.length; i++){
+                acumulandoValorColumna += tablaSumatorios[i][j];
+                
+            }
+            System.out.print(acumulandoValorColumna + "\t");
+            comprobarColumnas += acumulandoValorColumna;
+            total += acumulandoValorColumna;
+            acumulandoValorColumna = 0;
+            
         }
-        // Imprimir las sumas de las columnas en la fila final
-        for (int j = 0; j < sumaColumnas.length; j++) {
-            System.out.print(sumaColumnas[j] + "\t"); // Imprimir la suma de cada columna
-            sumaTotalColumnas += sumaColumnas[j];
-            sumaColumnas[j] = 0;
+        if(comprobarColumnas == comprobarFilas){
+            System.out.println("\t TOTAL:" + total);
         }
-        System.out.print(sumaTotalColumnas + sumaTotalFilas);
-        System.out.println(); // Salto de línea al final
 
     }
 }
