@@ -24,11 +24,10 @@ public class Ejercicio3Funciones {
         int numeroRandom;
         int[] arrayParesRandom = new int[longitud];
         for (int i = 0; i < arrayParesRandom.length; i++) {
-            numeroRandom = rd.nextInt(2, fin + 1);
-            
-            if (numeroRandom % 2 == 0) {
-                arrayParesRandom[i] = numeroRandom;
-            }
+            do {
+                numeroRandom = rd.nextInt(2, fin + 1);
+            } while (numeroRandom % 2 != 0);
+            arrayParesRandom[i] = numeroRandom;
         }
         Arrays.sort(arrayParesRandom);
 
