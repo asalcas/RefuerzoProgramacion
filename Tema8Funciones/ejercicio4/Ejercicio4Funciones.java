@@ -1,10 +1,5 @@
 package ejercicio4;
 
-<<<<<<< HEAD
-public class Ejercicio4Funciones {
-    public static void main(String[] args) {
-        
-=======
 import java.util.Random;
 import java.util.Scanner;
 
@@ -51,6 +46,6 @@ public class Ejercicio4Funciones {
         for (int i = 0; i < t.length; i++) {
             t[i] = rd.nextInt(1, 10);
         }
->>>>>>> fcbbbdd19766c2b7e1f30faf8b376a8d748ec5a3
     }
 }
+    
