@@ -42,20 +42,18 @@ public class Ejercicio5Funciones {
                 contador++;
             }
 
-        }
 
-        int[] arrayIndices = new int[contador]; // Creamos un array con la longitud de contador (si apareció 3 veces el
-                                                // array sera de 3 casillas)
-        contador = 0; // Lo machacamos a 0
-        for (int i = 0; i < array.length; i++) { // Recorremos el array
-            if (clave == array[i]) { // si coincide
-                arrayIndices[contador] = i; // entonces a la posicion de 'arrayIndices' en el valor contado (si hay 3
-                                            // [0,1,2]) en este caso es 0
-                contador++;// y lo incrementamos
+        }
+        int[] arrayIndices = new int[contador];
+        contador = 0;
+        
+        for (int i = 0; i < array.length; i++) {
+            if(clave == array[i]){
+                arrayIndices[contador] = i;
+                contador++;
             }
         }
         return arrayIndices;
-
     }
 
 }
