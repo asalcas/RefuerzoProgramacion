@@ -26,8 +26,8 @@ public class Ejercicio6Funciones {
 
 
     public static int[] suma(int aEjemplo[], int numeroElementos) {
-        int[] arrayResultado = new int[numeroElementos + 1];
-        for (int i = 0; i <= aEjemplo.length - numeroElementos; i++) {
+        int[] arrayResultado = new int[aEjemplo.length - numeroElementos + 1];
+        for (int i = 0; i < arrayResultado.length; i++) {
             for (int j = i; j < numeroElementos + i; j++) {
                 arrayResultado[i] += aEjemplo[j];
             }
