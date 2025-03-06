@@ -1,4 +1,4 @@
-package funcionesArrays.ejercicio6;
+package Arrays.ejercicio6;
 
 import java.util.Arrays;
 import java.util.Random;
